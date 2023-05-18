@@ -1,0 +1,375 @@
+p {
+  &.large {
+    font-size: 1.8rem;
+  }
+}
+
+.c {
+  &-dark {
+    color: $font-dark;
+    fill: $font-dark;
+  }
+  &-grey {
+    color: $font-grey;
+    fill: $font-grey;
+  }
+  &-grey-1 {
+    color: $font-grey-1;
+    fill: $font-grey;
+  }
+  &-purple {
+    color: var(--gradient-purple);
+    fill: var(--gradient-purple);
+  }
+  &-pink {
+    color: var(--gradient-pink);
+    fill: var(--gradient-pink);
+  }
+  &-green {
+    color: var(--gradient-green);
+    fill: var(--gradient-green);
+  }
+  &-blue {
+    color: var(--gradient-blue);
+    fill: var(--gradient-blue);
+  }
+  &-white {
+    color: #fff;
+    fill: #fff;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.ls {
+  &-1 {
+    letter-spacing: 0.1rem;
+  }
+  &-2 {
+    letter-spacing: -0.1rem;
+  }
+}
+
+.paragraph {
+  &-big {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+  }
+
+  &-small {
+    font-size: 1.4rem;
+
+    @media (max-width: 991px) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.f-w {
+  &-700 {
+    font-weight: 700;
+  }
+}
+
+.pattern-image {
+  padding: 5rem 0;
+  &-wrapper {
+    position: relative;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    object-fit: contain;
+    @include border-radius(2rem);
+
+    @media (max-width: 991px) {
+      height: 60%;
+    }
+  }
+
+  .background-pattern {
+    width: 95%;
+    height: calc(100% + 10rem);
+
+    left: initial;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 1;
+
+    @include border-radius(2rem);
+  }
+
+  &-1 {
+    text-align: right;
+    .background-pattern {
+      width: 82.5%;
+      right: -7rem;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    &:not(.pattern-image-1) {
+      .background-pattern {
+        right: -6rem;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &:not(.pattern-image-1) {
+      .background-pattern {
+        right: -3rem;
+      }
+    }
+
+    &-1 {
+      text-align: left;
+      img {
+        max-width: 90%;
+      }
+      .background-pattern {
+        width: 90%;
+        right: -2rem;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    &-1 {
+      .background-pattern {
+        right: -1rem;
+      }
+    }
+  }
+}
+
+.link-underline {
+  > span {
+    position: relative;
+    @include animateIt;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0rem;
+      bottom: -0.25rem;
+      height: 0.1rem;
+      background-color: #fff;
+      transform-origin: right center;
+      transform: scale(0, 1);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &:hover {
+    color: unset;
+    > span {
+      text-decoration: none;
+      &::before {
+        transform-origin: left center;
+        transform: scale(1, 1);
+      }
+    }
+  }
+
+  &-1 {
+    > span::before {
+      background-color: $font-grey;
+    }
+  }
+}
+
+.slider-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+
+  > div {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  i {
+    font-size: 6rem;
+    color: $color-grey;
+    @include animateIt;
+    &:hover {
+      color: var(--gradient-blue);
+    }
+  }
+
+  @media (max-width: 991px) {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-floating {
+  .input {
+    height: 6.3rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $font-grey-1;
+
+    padding: 0 1rem;
+
+    border: none;
+    border-bottom: 0.2rem solid $color-grey-2;
+
+    &:focus,
+    &:active {
+      border-color: var(--gradient-green);
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  label {
+    padding: 1.9rem 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $font-grey-1;
+  }
+
+  &:nth-child(n + 2) {
+    margin-top: 2.7rem;
+  }
+
+  .textarea {
+    height: 100%;
+    padding: 2.3rem 1rem !important;
+    resize: none;
+  }
+
+  &.textarea-form {
+    height: 100%;
+  }
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  transform: scale(0.85) translateY(-2rem) translateX(0.15rem);
+}
+
+.drop-shadow {
+  @include drop-shadow($color: var(--gradient-green-rgba-2));
+
+  &-1 {
+    @include drop-shadow($color: var(--gradient-blue-rgba-4));
+  }
+
+  &-2 {
+    @include drop-shadow($color: var(--gradient-green-rgba-1));
+  }
+
+  &-3 {
+    @include drop-shadow($color: var(--gradient-purple-1-rgba-2));
+  }
+
+  &-4 {
+    @include drop-shadow($color: var(--gradient-green-rgba-4));
+  }
+
+  &-team {
+    &-1 {
+      @include drop-shadow($color: var(--gradient-green-rgba-2), $yOffset: 15px, $blurRadius: 10px);
+    }
+    &-2 {
+      @include drop-shadow(
+        $color: var(--gradient-green-1-rgba-2),
+        $yOffset: 15px,
+        $blurRadius: 10px
+      );
+    }
+    &-3 {
+      @include drop-shadow($color: var(--gradient-blue-rgba-2), $yOffset: 15px, $blurRadius: 10px);
+    }
+  }
+}
+
+.gprev,
+.gnext {
+  display: none;
+}
+
+.social-gradient {
+  .twitter {
+    i {
+      color: var(--gradient-blue);
+    }
+  }
+  .facebook {
+    i {
+      color: var(--gradient-blue);
+    }
+  }
+  .linkedin {
+    i {
+      color: var(--gradient-green);
+    }
+  }
+  .youtube {
+    i {
+      color: var(--gradient-green);
+    }
+  }
+}
+
+ul.icon-list {
+  list-style: none;
+  margin-left: 3rem;
+
+  @media (max-width: 991px) {
+    margin-left: 1rem;
+  }
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    span {
+      display: inline-block;
+      width: calc(100% - 2.5rem);
+    }
+
+    &::before {
+      content: '\f0a9';
+      font-family: 'Line Awesome Free';
+      font-size: 2rem;
+      font-weight: 900;
+      width: 1.8rem;
+      display: inline-block;
+      position: relative;
+      margin-right: 0.7rem;
+    }
+  }
+
+  &-1 {
+    li {
+      &::before {
+        color: var(--gradient-green);
+      }
+    }
+  }
+
+  &-2 {
+    li {
+      &::before {
+        color: var(--gradient-blue);
+      }
+    }
+  }
+}

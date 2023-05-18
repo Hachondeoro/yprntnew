@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MaterialThemeProjectConfig">
+    <option name="isActive" value="true" />
+    <option name="useProjectFrame" value="true" />
+    <option name="settingsSelectedTab" value="1" />
+    <option name="projectFrameColor" value="e90069" />
+    <option name="useColoredTitleBar" value="true" />
+  </component>
+</project>

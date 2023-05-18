@@ -1,0 +1,123 @@
+/****************************************
+faq
+****************************************/
+.faq {
+  padding: 4rem 6rem;
+  background-color: #fff;
+  @include border-radius(1.7rem);
+
+  @media (max-width: 991px) {
+    padding: 3rem 5rem;
+  }
+
+  &-wrapper {
+    margin: 0 2rem;
+
+    @media (max-width: 991px) {
+      margin: 0;
+    }
+  }
+
+  .accordion-item {
+    border: none;
+    &:not(:first-child) {
+      margin-top: 0.7rem;
+    }
+  }
+  .accordion-button {
+    border: none;
+    box-shadow: none;
+    background-color: initial;
+
+    font-size: 2rem;
+    font-weight: bold;
+    color: $font-dark;
+    line-height: 3rem;
+
+    position: relative;
+
+    span {
+      padding-right: 3rem;
+    }
+
+    &::after {
+      content: '\f055';
+      font-family: 'Line Awesome Free';
+      color: var(--gradient-blue);
+
+      font-size: 3.2rem;
+      display: block;
+      background: none;
+
+      width: auto;
+      height: auto;
+
+      @include animateIt;
+    }
+
+    &:not(.collapsed) {
+      &::after {
+        content: '\f056';
+        color: var(--gradient-green);
+      }
+    }
+  }
+  .accordion-body {
+    padding: 2rem 3rem 1rem 1.25rem;
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 3rem;
+      color: $font-grey;
+    }
+  }
+
+  &-wrapper {
+    padding: 0.4rem;
+    @include border-gradient-double(180deg);
+    @include border-radius(2rem);
+    @include drop-shadow(var(--gradient-green-rgba-1));
+  }
+}
+
+/****************************************
+faq section
+****************************************/
+.faq-section {
+  &-1 {
+    .faq-section-wrapper {
+      padding-bottom: 15rem;
+      @media (max-width: 991px) {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  &-2 {
+    .faq-section-wrapper {
+      padding: 15rem 0;
+      @media (max-width: 991px) {
+        padding: 5rem 0;
+      }
+    }
+  }
+
+  &-3 {
+    .faq-section-wrapper {
+      padding: 5rem 0 15rem 0;
+      @media (max-width: 991px) {
+        padding: 5rem 0;
+      }
+    }
+  }
+
+  .section-heading {
+    margin-bottom: 4.4rem;
+  }
+
+  @media (max-width: 991px) {
+    .section-heading {
+      margin-bottom: 2rem;
+    }
+  }
+}

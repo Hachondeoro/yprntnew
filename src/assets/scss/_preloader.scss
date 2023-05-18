@@ -1,0 +1,61 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 999;
+
+  background-color: #fff;
+
+  @include border-gradient-double;
+  @include animateIt;
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  svg {
+    width: 10%;
+
+    @media (max-width: 991px) {
+      width: 25%;
+    }
+  }
+
+  path {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    fill: #fff;
+
+    @for $i from 1 through 8 {
+      &:nth-of-type(#{$i}) {
+        animation: spin_single 1s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+    }
+  }
+
+  &.loaded {
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin_single {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

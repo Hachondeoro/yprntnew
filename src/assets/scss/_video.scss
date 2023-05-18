@@ -1,0 +1,147 @@
+.video-section {
+  &-wrapper {
+    margin: 10rem 0;
+  }
+  .container {
+    position: relative;
+    padding-top: 1rem;
+    .row {
+      position: relative;
+      z-index: 3;
+
+      padding: 4rem 0;
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 991px) {
+      padding: 0 10rem;
+    }
+
+    @media (max-width: 499px) {
+      padding: 0 5rem;
+    }
+  }
+
+  .button {
+    margin-top: 3.3rem;
+  }
+
+  &-video {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 499px) {
+      padding: 0 5rem;
+    }
+
+    figure {
+      position: relative;
+      @include border-radius(2rem);
+
+      img {
+        object-fit: cover;
+        @include border-radius(2rem);
+      }
+
+      .play {
+        position: absolute;
+        top: 50%;
+        left: calc(9.8rem / -2);
+        transform: translateY(-50%);
+
+        width: 9.8rem;
+        height: 9.8rem;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--gradient-green);
+
+        a {
+          border-radius: 50%;
+          background-color: #fff;
+
+          width: 7.2rem;
+          height: 7.2rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          @include animateIt;
+
+          i {
+            font-size: 4rem;
+            color: var(--gradient-blue);
+            @include animateIt;
+          }
+        }
+
+        &:hover {
+          a {
+            width: 100%;
+            height: 100%;
+            i {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+
+      @media (min-width: 991px) and (max-width: 1200px) {
+        width: 95%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 10rem;
+      figure {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+
+        .play {
+          top: initial;
+          bottom: calc(9.8rem / -2);
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  &-content {
+    @media (max-width: 991px) {
+      margin-bottom: 5rem;
+      text-align: center;
+    }
+  }
+
+  .background-pattern {
+    @include border-radius(2rem);
+
+    @media (max-width: 991px) {
+      top: initial;
+      bottom: 0;
+
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 83.3333333333%;
+      height: 75%;
+    }
+  }
+}

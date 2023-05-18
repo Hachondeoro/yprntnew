@@ -1,0 +1,124 @@
+@mixin animateIt($duration: 0.25s, $timing_func: ease-out, $delay: 0s) {
+  -webkit-transition: all $duration $timing_func $delay;
+  -moz-transition: all $duration $timing_func $delay;
+  -o-transition: all $duration $timing_func $delay;
+  transition: all $duration $timing_func $delay;
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin line-anim-mixin($path-number, $offset) {
+  @keyframes line-anim-#{$path-number} {
+    0% {
+      stroke-dashoffset: $offset;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: $offset;
+    }
+  }
+}
+
+@mixin border-radius($value: 4rem) {
+  border-top-right-radius: $value;
+  border-bottom-right-radius: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin border-radius-reverse($value: 4rem) {
+  border-top-left-radius: $value;
+  border-bottom-right-radius: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin border-gradient($color, $deg: 90deg) {
+  @if $color == blue {
+    background: var(--gradient-green-rgb);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-green-rgba) 0%,
+      var(--gradient-blue-rgba) 100%
+    );
+  } @else if $color == blue-1 {
+    background: var(--gradient-blue-rgba);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-blue-rgba) 0%,
+      var(--gradient-green-rgba) 100%
+    );
+  } @else if $color == blue-reverse {
+    background: var(--gradient-green-rgba);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-green-rgba) 0%,
+      var(--gradient-blue-rgba) 100%
+    );
+  } @else if $color == green {
+    background: var(--gradient-green-rgba);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-blue-rgba) 0%,
+      var(--gradient-green-rgba) 100%
+    );
+  } @else if $color == green-1 {
+    background: var(--gradient-green-1-rgba);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-green-1-rgba) 0%,
+      var(--gradient-green-rgba) 100%
+    );
+  } @else if $color == green-2 {
+    background: var(--gradient-green-rgba);
+    background: linear-gradient(
+      $deg,
+      var(--gradient-green-rgba) 0%,
+      var(--gradient-green-rgba) 50%
+    );
+  }
+}
+
+@mixin gradient-to-white($color: var(--gradient-blue), $deg: 90deg) {
+  background: $color;
+  background: linear-gradient(180deg, $color 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+@mixin border-gradient-double($deg: 90deg, $first-pos: 20%, $second-pos: 80%) {
+  background: var(--gradient-green-rgb);
+  background: linear-gradient(
+    $deg,
+    var(--gradient-blue-rgba) $first-pos,
+    var(--gradient-green-rgba) $second-pos
+  );
+}
+
+@mixin icon-gradient() {
+  &::before {
+    background: var(--gradient-green);
+    background: -webkit-linear-gradient(
+      to top right,
+      var(--gradient-green) 30%,
+      var(--gradient-blue) 70%
+    );
+    background: -moz-linear-gradient(
+      to top right,
+      var(--gradient-green) 30%,
+      var(--gradient-blue) 70%
+    );
+    background: linear-gradient(to top right, var(--gradient-green) 30%, var(--gradient-blue) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@mixin drop-shadow($color: var(--gradient-green-rgba-4), $yOffset: 35px, $blurRadius: 25px) {
+  filter: drop-shadow(0px $yOffset $blurRadius $color);
+  -webkit-filter: drop-shadow(0px $yOffset $blurRadius $color);
+  -moz-filter: drop-shadow(0px $yOffset $blurRadius $color);
+}

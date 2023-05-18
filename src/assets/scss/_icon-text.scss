@@ -1,0 +1,48 @@
+/****************************************
+icon text
+****************************************/
+.icon-text {
+  width: 41%;
+  &-group {
+    display: flex;
+    > *:nth-child(n + 2) {
+      margin-left: 2.7rem;
+    }
+  }
+  i {
+    font-size: 8rem;
+    @include icon-gradient;
+  }
+  h4 {
+    margin: 3.3rem 0 2.5rem 0;
+  }
+
+  @media (max-width: 991px) {
+    width: 50%;
+  }
+}
+
+/****************************************
+icon text 1
+****************************************/
+.icon-text-1 {
+  display: flex;
+  align-items: center;
+  > * {
+    &:nth-child(n + 2) {
+      margin-top: 3.2rem;
+    }
+  }
+  i {
+    font-size: 8rem;
+    margin-right: 2.6rem;
+    @include icon-gradient;
+  }
+
+  svg {
+    width: 7.5rem;
+  }
+  p {
+    margin: 1.2rem 0 0 0;
+  }
+}

@@ -1,0 +1,157 @@
+/****************************************
+contact form
+****************************************/
+.contact-form {
+  @include border-gradient-double(180deg);
+  @include border-radius(2rem);
+
+  padding: 0.4rem;
+
+  &-wrapper {
+    @include border-radius(2rem);
+    background-color: #fff;
+
+    padding: 5.4rem 7.8rem 7.6rem 7.8rem;
+
+    @media (max-width: 991px) {
+      padding: 5.4rem 5rem 5rem 5rem;
+    }
+  }
+
+  .section-heading {
+    margin-bottom: 6.2rem;
+    @media (max-width: 991px) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-icon {
+    text-align: center;
+    i {
+      font-size: 20rem;
+      @include icon-gradient;
+    }
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 5rem;
+
+    &-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-1 {
+    .section-heading {
+      margin-bottom: 4.2rem;
+      @media (max-width: 991px) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+/****************************************
+contact form section
+****************************************/
+.contact-form-section {
+  &-wrapper {
+    position: relative;
+    padding: 15rem 0;
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &-1 {
+    .contact-form-section-wrapper {
+      padding: 15rem 0 0 0;
+    }
+  }
+
+  &-pattern {
+    .left {
+      position: absolute;
+      top: 20%;
+      left: 0;
+
+      z-index: 1;
+
+      width: 23.5%;
+      height: 27.9rem;
+
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+    }
+
+    .right {
+      position: absolute;
+      bottom: 20%;
+      right: 0;
+
+      z-index: 1;
+
+      width: 22.5%;
+      height: 27.9rem;
+
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-size: cover;
+    }
+
+    @media (max-width: 991px) {
+      .left {
+        width: 26%;
+      }
+
+      .right {
+        width: 26%;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    &-wrapper {
+      padding: 3rem 0 5rem 0;
+    }
+
+    &-1 {
+      .contact-form-section-wrapper {
+        padding: 3rem 0 5rem 0;
+      }
+    }
+
+    &-row {
+      div[class*='col'] {
+        &:nth-child(n + 2) {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}
+
+/****************************************
+contact details
+****************************************/
+.contact-details {
+  .section-heading {
+    margin-bottom: 4.5rem;
+  }
+
+  @media (max-width: 991px) {
+    .details-row {
+      div[class*='col'] {
+        &:nth-child(n + 2) {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

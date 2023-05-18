@@ -1,0 +1,41 @@
+.about-section {
+  &-wrapper {
+    padding-bottom: 15rem;
+  }
+
+  &-content {
+    > *:nth-child(n + 2) {
+      margin-top: 3.5rem;
+    }
+
+    .paragraph-big {
+      margin-top: 2rem;
+    }
+  }
+
+  .second-half-heading {
+    margin: 4.3rem 0 5.7rem 0;
+  }
+
+  @media (max-width: 991px) {
+    &-wrapper {
+      padding-bottom: 5rem;
+    }
+
+    &-content {
+      margin-top: 5rem;
+    }
+
+    .second-half-heading {
+      margin: 3rem 0 3rem 0;
+    }
+
+    .about-row {
+      div[class*='col'] {
+        &:nth-child(n + 2) {
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+}

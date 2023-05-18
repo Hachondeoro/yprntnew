@@ -1,0 +1,213 @@
+/****************************************
+testimonial slide
+****************************************/
+.testimonial-slide {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+  }
+
+  .image {
+    background-color: transparent;
+    border-radius: 50%;
+
+    padding: 0.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+      margin-right: 8rem;
+    }
+
+    @include animateIt;
+
+    &-wrapper {
+      background-color: #fff;
+      border-radius: 50%;
+
+      padding: 1.4rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include animateIt;
+
+      @media (max-width: 991px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &-inner {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transform-origin: center center;
+      transform: scale(0.61);
+      @include animateIt;
+
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border: 0.1rem solid #fff;
+        position: relative;
+        z-index: 1;
+        border-radius: 50%;
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        border-radius: 50%;
+
+        @include animateIt;
+
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .content {
+    // flex: .8;
+    width: 55%;
+    opacity: 0;
+    visibility: hidden;
+    @include animateIt;
+    p {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 4rem;
+      color: $font-grey;
+    }
+    h5 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 4rem;
+      color: $font-dark;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 991px) {
+      width: 150%;
+      margin-top: 5rem;
+      text-align: center;
+    }
+  }
+}
+
+/****************************************
+testimonial slider
+****************************************/
+.testimonial-slider {
+  @media (max-width: 991px) {
+    margin-top: 1rem;
+  }
+  .swiper-container {
+    @media (min-width: 992px) {
+      height: 55rem;
+    }
+  }
+  .swiper-slide {
+    display: flex;
+    // align-items: center;
+    &-active {
+      .image {
+        z-index: 10;
+        padding: 0.4rem;
+        @include border-gradient-double(45deg);
+        &-inner {
+          transform: scale(1);
+          &::after {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+      .content {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &-prev {
+      .image {
+        z-index: 1;
+        margin-top: 17.5%;
+        cursor: pointer;
+
+        &-inner {
+          &::after {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 0) 100%);
+          }
+        }
+
+        @media (max-width: 991px) {
+          margin: 0 -50.5% 0 0;
+
+          &-inner {
+            &::after {
+              background: rgb(255, 255, 255);
+              background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 0) 100%);
+            }
+          }
+        }
+      }
+    }
+    &-next {
+      .image {
+        z-index: 1;
+        margin-top: -17.5%;
+        cursor: pointer;
+        &-inner {
+          &::after {
+            background: rgb(255, 255, 255);
+            background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(0, 0, 0, 0) 100%);
+          }
+        }
+        @media (max-width: 991px) {
+          margin: 0 0 0 -50.5%;
+
+          &-inner {
+            &::after {
+              background: rgb(255, 255, 255);
+              background: linear-gradient(
+                -90deg,
+                rgba(255, 255, 255, 1) 20%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/****************************************
+testimonial section
+****************************************/
+.testimonial-section {
+  &-wrapper {
+    padding: 15rem 0 14rem 0;
+
+    @media (max-width: 991px) {
+      padding: 6rem 0 5rem 0;
+    }
+  }
+}

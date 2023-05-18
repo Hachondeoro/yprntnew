@@ -1,0 +1,51 @@
+{
+  "name": "orions-react-demo-2",
+  "version": "0.1.0",
+  "homepage": "http://gfxpartner.com/orions-react/demo-2",
+  "private": true,
+  "dependencies": {
+    "@popperjs/core": "^2.11.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.1.3",
+    "glightbox": "^3.1.0",
+    "graphql": "^16.6.0",
+    "graphql-request": "^6.0.0",
+    "gsap": "^3.9.1",
+    "html-react-parser": "^3.0.16",
+    "node-sass": "^7.0.0",
+    "overlayscrollbars": "^1.13.1",
+    "prettier": "^2.8.8",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "swiper": "^7.4.1",
+    "web-vitals": "^2.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
