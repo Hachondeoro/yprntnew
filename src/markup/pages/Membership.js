@@ -52,7 +52,6 @@ const Membership = () => {
       {/* instagram - start */}
       <div className="instagram">
         <div className="instagram-wrapper">
-          <ImageSlider />
           <div className="button-wrapper">
             <Button
               to="/"
@@ -63,6 +62,7 @@ const Membership = () => {
           </div>
         </div>
       </div>
+      <div style={{ height: '400px' }} />
       {/* instagram - end */}
     </>
   );

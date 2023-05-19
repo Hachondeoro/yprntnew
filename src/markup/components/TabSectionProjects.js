@@ -130,7 +130,9 @@ const TabSection = ({ data, subHeading, className }) => {
                     >
                       <span>
                         <i className="las la-hand-point-right"></i>
-                        <span className="text" style={{fontSize:"1.5em"}}>{button.title}</span>
+                        <span className="text" style={{ fontSize: '1.5em' }}>
+                          {button.title}
+                        </span>
                       </span>
                     </button>
                   );
@@ -150,9 +152,8 @@ const TabSection = ({ data, subHeading, className }) => {
                     >
                       <div className="tab-pane-wrapper c-grey">
                         <h2 className="c-dark">{tab.title}</h2>
-                        <img src={tab.image.url} alt={tab.title} className="w-100 w-md"/>
+                        <img src={tab.image.url} alt={tab.title} className="w-100 w-md" />
                         {parse(tab.description)}
-
                       </div>
                     </div>
                   );

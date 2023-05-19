@@ -165,6 +165,7 @@
   }
 
   &-1 {
+    //height: min(100vh, 100%);
     .tab-section-wrapper {
       padding-bottom: 15rem;
       @media (max-width: 991px) {

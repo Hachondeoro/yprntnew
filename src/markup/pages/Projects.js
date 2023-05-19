@@ -52,8 +52,11 @@ const Projects = () => {
       {/* page header - end */}
 
       {/* tab section - start */}
-      {isLoaded && <TabSection data={projects} subHeading="Projects" />}
+      {isLoaded ? (
+        <TabSection data={projects} subHeading="Projects" className="tab-section-1" />
+      ) : null}
       {/* tab section - end */}
+      <div style={{height:"400px"}}/>
 
       {/* feature section - start */}
 
