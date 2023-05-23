@@ -27,6 +27,7 @@ const Markup = () => {
   return (
     <>
       <Preloader />
+
       <CustomScrollbar />
       <div className="main-wrapper">
         {/* header - start */}
