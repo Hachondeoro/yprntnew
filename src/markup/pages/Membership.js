@@ -54,7 +54,7 @@ const Membership = () => {
         <div className="instagram-wrapper">
           <div className="button-wrapper">
             <Button
-              to="/"
+              to="https://www.instagram.com/rotaractnt/"
               content="Follow us on Instagram"
               type="button-premium"
               icon={<i className="fab fa-instagram"></i>}
