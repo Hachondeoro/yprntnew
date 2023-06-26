@@ -15,6 +15,7 @@ import about_image from '../../assets/images/Paws And Gelato.jpg';
 import organisation_image from '../../assets/images/organisation structure.png';
 import AppFeatureSingle from '../components/AppFeatureSingle';
 import { request } from '../../datoCMS/request';
+import parse from "html-react-parser";
 
 const About = () => {
   const [FAQ, setFAQ] = useState([]);
@@ -273,7 +274,7 @@ The mission of the Rotaract is to bolster the Northern Territory's young profess
                             data-bs-parent="#faq-accordion"
                           >
                             <div className="accordion-body">
-                              <p>{element.answer}</p>
+                              <p>{parse(element.answer)}</p>
                             </div>
                           </div>
                         </div>
@@ -287,22 +288,6 @@ The mission of the Rotaract is to bolster the Northern Territory's young profess
         </div>
       </div>
       {/* faq section - end */}
-
-      {/* instagram - start */}
-      <div className="instagram">
-        <div className="instagram-wrapper">
-          <ImageSlider />
-          <div className="button-wrapper">
-            <Button
-              to="/"
-              content="Follow us on Instagram"
-              type="button-premium"
-              icon={<i className="fab fa-instagram"></i>}
-            />
-          </div>
-        </div>
-      </div>
-      {/* instagram - end */}
     </>
   );
 };
