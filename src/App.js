@@ -3,7 +3,7 @@ import React from 'react';
 // react router dom
 import { BrowserRouter } from 'react-router-dom';
 
-import Markup from './markup/Markup';
+import AppRoutes from './markup/AppRoutes';
 
 // css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +17,7 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 const App = () => {
   return (
     <BrowserRouter basename="/">
-      <Markup />
+      <AppRoutes />
     </BrowserRouter>
   );
 };

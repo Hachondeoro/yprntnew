@@ -72,7 +72,7 @@ const About = () => {
                     </div>
                   </div>
                   <p className="paragraph-big">
-                    Once upon a time, in October 2022, a group of compassionate and service-minded
+                    In October 2022, a group of compassionate and service-minded
                     young leaders came together with a shared vision. They were determined to
                     establish an organization that would bring together young professionals
                     dedicated to serving their community. Thus, the Rotaract Young Professionals

@@ -134,6 +134,39 @@ download button
       }
     }
   }
+  &-rotaractButton {
+    @include border-gradient(blue);
+    @include drop-shadow($color: var(--gradient-blue-rgba-1), $yOffset: 5px, $blurRadius: 5px);
+    .download-button-inner {
+      &::after {
+        background-color: var(--gradient-blue);
+      }
+    }
+    .download-button-icon {
+      i {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &:hover {
+    .download-button-inner {
+      &::after {
+        left: 100%;
+      }
+    }
+    .download-button-icon {
+      i {
+        color: #fff;
+      }
+    }
+    .download-button-content {
+      h3,
+      h5 {
+        color: #fff;
+      }
+    }
+  }
 
   &-1 {
     padding: 0;
@@ -224,6 +257,54 @@ download button
         background-color: #fff;
       }
     }
+
+    .download-button-icon {
+      i {
+        color: #fff;
+      }
+    }
+    .download-button-content {
+      h3,
+      h5 {
+        color: #fff;
+      }
+    }
+
+    &:hover {
+      .download-button-inner::after {
+        left: 0;
+      }
+
+      .download-button-icon {
+        i {
+          color: unset;
+        }
+      }
+      .download-button-content {
+        h3 {
+          color: $font-dark;
+        }
+        h5 {
+          color: $font-grey;
+        }
+      }
+    }
+  }
+  &-white {
+    padding: 0;
+    background: white;
+    -webkit-box-shadow: inset 0px 0px 0px var(--border-width) #ffffff;
+    box-shadow: inset 0px 0px 0px var(--border-width) #ffffff;
+    .download-button-inner {
+      padding: calc(0.5rem + var(--border-width)) calc(3rem + var(--border-width))
+        calc(0.2rem + var(--border-width)) calc(3.4rem + var(--border-width));
+
+      &::after {
+        left: 100%;
+        background-color: #fff;
+      }
+    }
+    margin-bottom: 1em;
 
     .download-button-icon {
       i {
