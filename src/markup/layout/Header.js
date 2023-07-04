@@ -142,6 +142,21 @@ const Header = ({ type }) => {
     }
   }, []);
 
+  const closeMenuMobile = () => {
+    const close_button = document.querySelector('.close-button');
+
+    if (typeof close_button != 'undefined' && close_button != null) {
+      const dropped = document.querySelector('.dropped');
+
+      if (typeof dropped == 'undefined' && dropped == null) {
+        // toggleSlide(dropped.querySelector('.child'));
+        dropped.classList.remove('dropped');
+      }
+
+      document.querySelector('.navigation').classList.remove('shown');
+    }
+  };
+
   return (
     <div className={`navigation ${type}`}>
       <div className="navigation-wrapper">
@@ -178,85 +193,56 @@ const Header = ({ type }) => {
               </div>
               <ul className="parent">
                 <li>
-                  <Link to="/" className="link-underline link-underline-1">
+                  <Link
+                    to="/"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>Home</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="link-underline link-underline-1">
+                  <Link
+                    to="/about"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>About us</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/projects" className="link-underline link-underline-1">
+                  <Link
+                    to="/projects"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>Our projects</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/sponsors" className="link-underline link-underline-1">
+                  <Link
+                    to="/sponsors"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>Our partners</span>
                   </Link>
                 </li>
                 <li>
-                  <Link to="/membership" className="link-underline link-underline-1">
+                  <Link
+                    to="/membership"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>Membership</span>
                   </Link>
                 </li>
-                {/*<li className="has-child">*/}
-                {/*  <Link to="/about" className="link-underline link-underline-1">*/}
-                {/*    <span>About</span>*/}
-                {/*  </Link>*/}
-                {/*  <div className="child">*/}
-                {/*    <ul>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/about" className="link-underline">*/}
-                {/*          <span>About</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/privacy-policy" className="link-underline">*/}
-                {/*          <span>Privacy Policy</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*    </ul>*/}
-                {/*  </div>*/}
-                {/*</li>*/}
-                {/*<li className="has-child">*/}
-                {/*  <Link to="/features-1" className="link-underline link-underline-1">*/}
-                {/*    <span>Features</span>*/}
-                {/*  </Link>*/}
-                {/*  <div className="child">*/}
-                {/*    <ul>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/features-1" className="link-underline">*/}
-                {/*          <span>Features Style 1</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/features-2" className="link-underline">*/}
-                {/*          <span>Features Style 2</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/feature-detail-1" className="link-underline">*/}
-                {/*          <span>Feature Detail 1</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*      <li>*/}
-                {/*        <Link to="/feature-detail-2" className="link-underline">*/}
-                {/*          <span>Feature Detail 2</span>*/}
-                {/*        </Link>*/}
-                {/*      </li>*/}
-                {/*    </ul>*/}
-                {/*  </div>*/}
-                {/*</li>*/}
-                {/*<li>*/}
-                {/*  <Link to="/pricing" className="link-underline link-underline-1">*/}
-                {/*    <span>Pricing</span>*/}
-                {/*  </Link>*/}
-                {/*</li>*/}
                 <li>
-                  <Link to="/contact" className="link-underline link-underline-1">
+                  <Link
+                    to="/contact"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
                     <span>Contact</span>
                   </Link>
                 </li>

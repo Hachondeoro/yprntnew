@@ -64,7 +64,7 @@ const TabSection = ({ data, subHeading, className }) => {
 
   useEffect(() => {
     tabPaneHeight();
-    document.querySelector('.tab-section-wrapper').style.height = '2000px';
+    // document.querySelector('.tab-section-wrapper').style.height = '2000px';
   }, [path]);
 
   useEffect(() => {
@@ -102,7 +102,7 @@ const TabSection = ({ data, subHeading, className }) => {
   };
 
   return (
-    <div className={`tab-section ${className}`} ref={ref}>
+    <div className={`tab-section ${className} tab-section-projects`} ref={ref}>
       <div className="tab-section-wrapper">
         <div className="container">
           <div className="row gx-5">

@@ -180,3 +180,10 @@
     }
   }
 }
+
+.tab-section-projects {
+  height: 2000px;
+  @media (max-width: 767px) {
+    height: 3000px;
+  }
+}
