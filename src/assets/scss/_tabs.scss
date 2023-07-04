@@ -182,8 +182,8 @@
 }
 
 .tab-section-projects {
-  height: 2000px;
-  @media (max-width: 767px) {
-    height: 3000px;
+  height: 2200px;
+  @media (max-width: 1000px) {
+    height: 3600px;
   }
 }
