@@ -48,22 +48,6 @@ const Membership = () => {
         <TabSection data={membershipFAQ} subHeading="Explore" className="tab-section-1" />
       )}
       {/* tab section - end */}
-
-      {/* instagram - start */}
-      <div className="instagram">
-        <div className="instagram-wrapper">
-          <div className="button-wrapper">
-            <Button
-              to="https://www.instagram.com/rotaractnt/"
-              content="Follow us on Instagram"
-              type="button-premium"
-              icon={<i className="fab fa-instagram"></i>}
-            />
-          </div>
-        </div>
-      </div>
-      <div style={{ height: '400px' }} />
-      {/* instagram - end */}
     </>
   );
 };

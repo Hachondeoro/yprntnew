@@ -15,7 +15,7 @@ import about_image from '../../assets/images/Paws And Gelato.jpg';
 import organisation_image from '../../assets/images/organisation structure.png';
 import AppFeatureSingle from '../components/AppFeatureSingle';
 import { request } from '../../datoCMS/request';
-import parse from "html-react-parser";
+import parse from 'html-react-parser';
 
 const About = () => {
   const [FAQ, setFAQ] = useState([]);
@@ -72,20 +72,45 @@ const About = () => {
                     </div>
                   </div>
                   <p className="paragraph-big">
-                    The Rotaract Young Professionals Northern Territory is a community of
-                    service-minded young professional leaders, working together to make a difference
-                    in the community.
+                    Once upon a time, in October 2022, a group of compassionate and service-minded
+                    young leaders came together with a shared vision. They were determined to
+                    establish an organization that would bring together young professionals
+                    dedicated to serving their community. Thus, the Rotaract Young Professionals
+                    Northern Territory was born.
                   </p>
                   <p>
-                    We are a volunteer-based community service organisation that works to support
-                    young professional leaders and emerging young leaders in the Territory.
+                    Driven by their passion for making a difference, the members of Rotaract created
+                    a close-knit community of like-minded individuals. They united under a common
+                    goal: to create positive change in the community through their collective
+                    efforts. Together, they became a force for good, working tirelessly to make a
+                    lasting impact.
                   </p>
                   <p>
-                    With a focus on developing and delivering personal and professional development
-                    opportunities tailored for young professionals and graduates that combine
-                    learning, networking and work- specific takeaways, Rotaract is dedicated to
-                    helping young professionals and Territory graduates step up as leaders in their
-                    respective industries and communities.
+                    Rotaract Young Professionals Northern Territory is not just an ordinary
+                    community service organization; it is a volunteer-based powerhouse of dedicated
+                    individuals. Their primary focus is to support and empower young professional
+                    leaders, as well as emerging young leaders in the Territory. They believe that
+                    by utilizing their skills, knowledge, and experiences, they can make a tangible
+                    difference in the lives of others.
+                  </p>
+                  <p>
+                    Since its humble beginnings, Rotaract has successfully implemented numerous
+                    projects that have brought about positive change. They have not only transformed
+                    communities but also empowered young leaders through professional development
+                    opportunities and meaningful volunteering experiences.
+                  </p>
+                  <p>
+                    As time goes on, Rotaract remains committed to its mission of serving the
+                    community. Led by a team of dedicated young professionals, they continue to
+                    initiate and execute various community service projects. Their unwavering
+                    dedication ensures that they make a lasting impact on the lives of those they
+                    serve.
+                  </p>
+                  <p>
+                    The story of Rotaract Young Professionals Northern Territory is one of
+                    collaboration, passion, and a relentless commitment to service. It is a tale
+                    that showcases the power of young leaders coming together to create a better and
+                    brighter future for their community.
                   </p>
                 </div>
               </div>
@@ -106,14 +131,20 @@ const About = () => {
             {/* first half - end */}
             {/* second half - start */}
             <div className="row">
-              <div className="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
-                <h3 className="c-dark second-half-heading">Why we are different.</h3>
+              <div className="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1 text-center">
+                <h3 className="c-dark second-half-heading mb-2">Why we are different</h3>
+                <h4 className="c-dark second-half-heading mb-2">Our Motto, Vision & Mission</h4>
+                <p className="my-4">
+                  Rotaract values the importance of connecting young professionals, fostering their
+                  personal and professional growth, and inspiring them to give back to the
+                  community.
+                </p>
               </div>
             </div>
             <div className="row gx-5 about-row">
               <div className="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
                 <AppFeatureSingle
-                  icon="las la-server"
+                  icon="las la-award"
                   heading="Our Motto"
                   excerpt="Service above Self"
                   link="/#"
@@ -122,19 +153,18 @@ const About = () => {
               </div>
               <div className="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
                 <AppFeatureSingle
-                  icon="las la-user-lock"
+                  icon="las la-eye"
                   heading="Our Vision"
-                  excerpt="The vision is to be the most connected and the largest service-minded young professional community in the Northern Territory."
+                  excerpt="Empowering the next generation of leaders, our vision to cultivate a community of young professionals united by service, leadership, and fellowship."
                   link="/#"
                   containerClass="app-feature-single-1"
                 />
               </div>
               <div className="col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
                 <AppFeatureSingle
-                  icon="las la-map-marked-alt"
+                  icon="las la-bullseye"
                   heading="Our Mission"
-                  excerpt="
-The mission of the Rotaract is to bolster the Northern Territory's young professional community by providing opportunities for early career professionals and recent graduates to connect, grow and lead through the framework of fellowship and service."
+                  excerpt="At Rotaract, our mission is to empower Northern Territory's young professionals and recent graduates by creating a vibrant community where they can forge valuable connections, thrive in personal and professional growth, and emerge as inspiring leaders. We achieve this through a dynamic blend of fellowship and service, fostering an environment where young professionals lead with integrity, serve with passion, and make a lasting impact in their communities and beyond."
                   link="/#"
                   containerClass="app-feature-single-1"
                 />
@@ -160,7 +190,7 @@ The mission of the Rotaract is to bolster the Northern Territory's young profess
                       <h5>our team</h5>
                     </div>
                     <div className="main-heading">
-                      <h1>Meet our team</h1>
+                      <h1>Our organisation structure</h1>
                     </div>
                   </div>
                 </div>
@@ -169,15 +199,15 @@ The mission of the Rotaract is to bolster the Northern Territory's young profess
             </div>
             <div className="container team-slider-container">
               {/* team slider - start */}
-              <div className="order-lg-2 col-md-8 offset-md-2 col-10 offset-1 order-1">
+              <div className="">
                 <div className="about-section-image">
                   <div className="pattern-image pattern-image-1">
                     <div className="pattern-image-wrapper">
                       <img
                         className="drop-shadow-1"
                         src={organisation_image}
-                        height="650"
-                        width="1050"
+                        height="850"
+                        width="1250"
                         alt="pattern"
                       />
                     </div>

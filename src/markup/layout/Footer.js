@@ -16,20 +16,37 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 offset-lg-0 col-md-8 offset-md-2 col-10 offset-1">
-              <div className="footer-row">
-                <div className="footer-detail">
+              <div className="footer-row row">
+                <div className="footer-detail col-12 col-md-7">
                   <Link to="#">
                     <img src={logo} alt="footer-logo" width="100px" />
                   </Link>
-                  <img src={australianflag} alt="footer-logo" height="60px" style={{marginLeft:"20px"}}/>
-                  <img src={aboriginalflag} alt="footer-logo" height="60px" style={{marginLeft:"20px"}}/>
-                  <img src={islandersflag} alt="footer-logo" height="60px" style={{marginLeft:"20px"}}/>
+                  <img
+                    src={australianflag}
+                    alt="footer-logo"
+                    height="60px"
+                    style={{ marginLeft: '20px' }}
+                  />
+                  <img
+                    src={aboriginalflag}
+                    alt="footer-logo"
+                    height="60px"
+                    style={{ marginLeft: '20px' }}
+                  />
+                  <img
+                    src={islandersflag}
+                    alt="footer-logo"
+                    height="60px"
+                    style={{ marginLeft: '20px' }}
+                  />
                   <p className="c-grey-1">
-                    We acknowledge the Traditional Owners of the land where we work and live, the
-                    people of the nation and pay our respects to Elders past and present.
+                    Rotaract Young Professionals acknowledges the Traditional Owners of country
+                    throughout the Northern Territory, and recognises their continuing connection to
+                    their lands, waters and communities. We pay our respects to Aboriginal cultures;
+                    and to Elders both past and present.
                   </p>
                   <div className="links">
-                    <a className="link-underline" href="mailto:hello@orions.com">
+                    <a className="link-underline" href="mailto:info@yprnt.com">
                       <span>info@yprnt.com</span>
                     </a>
                   </div>
@@ -63,8 +80,9 @@ const Footer = () => {
                 {/*    </li>*/}
                 {/*  </ul>*/}
                 {/*</div>*/}
-                <div className="footer-list">
+                <div className="footer-list col-12 col-md-5">
                   <h6>Menu</h6>
+
                   <ul>
                     <li>
                       <Link to="/" className="link-underline">
@@ -73,22 +91,17 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link to="/about" className="link-underline">
-                        <span>About</span>
+                        <span>About us</span>
                       </Link>
                     </li>
                     <li>
                       <Link to="/projects" className="link-underline">
-                        <span>Projects</span>
+                        <span>Our projects</span>
                       </Link>
                     </li>
-                  </ul>
-                </div>
-                <div className="footer-list">
-                  <h6>Menu</h6>
-                  <ul>
                     <li>
                       <Link to="/sponsors" className="link-underline">
-                        <span>Sponsors</span>
+                        <span>Our partners</span>
                       </Link>
                     </li>
                     <li>

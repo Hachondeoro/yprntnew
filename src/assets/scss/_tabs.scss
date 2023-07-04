@@ -2,6 +2,12 @@
   position: relative;
   @include animateIt(0.5s);
 
+  ul {
+    li {
+      margin-bottom: 1.5em;
+    }
+  }
+
   & .tab-pane {
     display: block;
     position: absolute;

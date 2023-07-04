@@ -151,15 +151,15 @@ const Header = ({ type }) => {
               {type === 'navigation-1' ? (
                 <>
                   <Link className="logo" to="/">
-                    <img src={logo} alt="orions-logo" width="80px"/>
+                    <img src={logo} alt="orions-logo" />
                   </Link>
-                  <Link className="logo-white" to="/" >
-                    <img src={logo_white} alt="orions-logo" width="80px"/>
+                  <Link className="logo-white" to="/">
+                    <img src={logo_white} alt="orions-logo" />
                   </Link>
                 </>
               ) : (
                 <Link to="/">
-                  <img src={logo} alt="orions-logo" width="80px"/>
+                  <img src={logo} alt="orions-logo" />
                 </Link>
               )}
             </div>
@@ -167,7 +167,7 @@ const Header = ({ type }) => {
               <div className="mobile-header">
                 <div className="logo">
                   <Link to="/">
-                    <img src={logo_white} alt="logo" width="80px"/>
+                    <img src={logo_white} alt="logo" width="80px" />
                   </Link>
                 </div>
                 <ul>
@@ -184,17 +184,17 @@ const Header = ({ type }) => {
                 </li>
                 <li>
                   <Link to="/about" className="link-underline link-underline-1">
-                    <span>About</span>
+                    <span>About us</span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/projects" className="link-underline link-underline-1">
-                    <span>Projects</span>
+                    <span>Our projects</span>
                   </Link>
                 </li>
                 <li>
                   <Link to="/sponsors" className="link-underline link-underline-1">
-                    <span>Sponsors</span>
+                    <span>Our partners</span>
                   </Link>
                 </li>
                 <li>
@@ -270,7 +270,10 @@ const Header = ({ type }) => {
                     </Link>
                   </li>
                   <li className="linkedin">
-                    <Link to="https://www.linkedin.com/company/young-professional-rotaract-northern-territory/" className="link-underline">
+                    <Link
+                      to="https://www.linkedin.com/company/young-professional-rotaract-northern-territory/"
+                      className="link-underline"
+                    >
                       <i className="fab fa-linkedin-in"></i>
                     </Link>
                   </li>

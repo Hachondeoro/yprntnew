@@ -20,7 +20,7 @@ const TeamSlider = ({ sponsors }) => {
                 <div className="image">
                   <div className="image-wrapper">
                     <div className="">
-                      <img src={sponsor.image.url} alt="team-sponsor" width="100%" />
+                      <img src={sponsor.image.url} alt="team-sponsor" width="100%" height="90px"/>
                     </div>
                   </div>
                 </div>

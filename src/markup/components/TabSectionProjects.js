@@ -60,9 +60,11 @@ const tabFunc = ref => {
 const TabSection = ({ data, subHeading, className }) => {
   const ref = useRef(null);
   let path = useLocation().pathname;
+  console.log('path is: ', path);
 
   useEffect(() => {
     tabPaneHeight();
+    document.querySelector('.tab-section-wrapper').style.height = '2000px';
   }, [path]);
 
   useEffect(() => {
@@ -74,7 +76,7 @@ const TabSection = ({ data, subHeading, className }) => {
       window.removeEventListener('load', tabPaneHeight);
       window.removeEventListener('resize', tabPaneHeight);
     };
-  });
+  }, []);
 
   const tabPaneHeight = e => {
     if (ref.current === null) return;
@@ -118,7 +120,7 @@ const TabSection = ({ data, subHeading, className }) => {
                 {data.map((button, key) => {
                   return (
                     <button
-                      className={`nav-link ${key === 0 ? 'active' : ''}`}
+                      className={`nav-link ${key === 0 ? 'active' : ''} text-start`}
                       id={`tab-button-${key}`}
                       data-bs-toggle="pill"
                       data-bs-target={`#tab-pane-${key}`}
@@ -129,7 +131,7 @@ const TabSection = ({ data, subHeading, className }) => {
                       key={key}
                     >
                       <span>
-                        <i className="las la-hand-point-right"></i>
+                        <i className="las la-calendar-check"></i>
                         <span className="text" style={{ fontSize: '1.5em' }}>
                           {button.title}
                         </span>
@@ -150,8 +152,8 @@ const TabSection = ({ data, subHeading, className }) => {
                       aria-labelledby={`tab-button-${key}`}
                       key={key}
                     >
-                      <div className="tab-pane-wrapper c-grey">
-                        <h2 className="c-dark">{tab.title}</h2>
+                      <div className="tab-pane-wrapper">
+                        <h2 className="c-dark">{tab.titleright}</h2>
                         <img src={tab.image.url} alt={tab.title} className="w-100 w-md" />
                         {parse(tab.description)}
                       </div>

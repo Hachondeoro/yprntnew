@@ -53,7 +53,7 @@ const Sponsors = () => {
                 <div className="col">
                   <div className="section-heading center c-white">
                     <div className="main-heading">
-                      <h1 style={{ color: '#123769' }}>Our Sponsors</h1>
+                      <h1 style={{ color: '#123769' }}>Our sponsors</h1>
                     </div>
                   </div>
                 </div>

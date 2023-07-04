@@ -9,8 +9,8 @@
   }
 
   &-row {
-    display: flex;
-    justify-content: space-between;
+    //display: flex;
+    //justify-content: space-between;
 
     position: relative;
     z-index: 2;
@@ -25,7 +25,7 @@
   }
 
   &-detail {
-    flex: 0.5;
+    //flex: 0.5;
     p {
       margin: 4rem 0;
       @media (max-width: 991px) {

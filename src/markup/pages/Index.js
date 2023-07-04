@@ -38,6 +38,11 @@ const Index = () => {
               <div className="col-lg-6 offset-lg-0 order-lg-1 col-10 offset-1 order-2">
                 <div className="hero-content c-white">
                   <h1>Rotaract Young Professionals</h1>
+                  <p className="large-subtitle">
+                    Rotaract values the importance of connecting young professionals, fostering
+                    their personal and professional growth, and inspiring them to give back to the
+                    community.
+                  </p>
                   <p className="large">Connect, Grow, Give</p>
                   <DownloadButton buttonType="download-button-2" />
                 </div>
@@ -113,9 +118,7 @@ const Index = () => {
                       <h5>our video</h5>
                     </div>
                     <div className="main-heading">
-                      <h1>
-                        Connect, Grow, Lead
-                      </h1>
+                      <h1>Connect, Grow, Give</h1>
                     </div>
                   </div>
                   <Button to="/contact" content="Get Started" type="button-1" />
@@ -180,7 +183,6 @@ const Index = () => {
       {/*</div>*/}
       {/* pricing section - end */}
 
-
       {/* faq section - start */}
       {/* faq section - end */}
 
@@ -221,8 +223,6 @@ const Index = () => {
       {/*  </div>*/}
       {/*</div>*/}
       {/* screem section - end */}
-
-
     </>
   );
 };

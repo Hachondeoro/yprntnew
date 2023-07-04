@@ -20,6 +20,7 @@ const Projects = () => {
       `
           allProjects {
             title
+            titleright
             image {
               url
             }
@@ -56,7 +57,7 @@ const Projects = () => {
         <TabSection data={projects} subHeading="Projects" className="tab-section-1" />
       ) : null}
       {/* tab section - end */}
-      <div style={{height:"400px"}}/>
+      {/*<div style={{height:"400px"}}/>*/}
 
       {/* feature section - start */}
 

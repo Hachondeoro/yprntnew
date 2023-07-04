@@ -1,6 +1,13 @@
 /****************************************
 navigation
 ****************************************/
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md: 'only screen and (min-width: 768px) and (max-width: 1279px)';
+$sm: '(max-width: 767px)';
+$xs: '(max-width: 575px)';
+$xss: '(max-width: 375px)';
+
 .navigation {
   &-wrapper {
     width: 100%;
@@ -562,6 +569,14 @@ navigation
   }
 }
 
+.navigation-logo {
+  img {
+    width: 120px;
+    @media #{$sm} {
+      width: 80px;
+    }
+  }
+}
 /****************************************
 top menu
 ****************************************/

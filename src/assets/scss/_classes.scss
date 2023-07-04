@@ -1,8 +1,17 @@
 p {
   &.large {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 600;
   }
 }
+p {
+  &.large-subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
+
+
 
 .c {
   &-dark {
@@ -75,7 +84,7 @@ p {
 }
 
 .pattern-image {
-  padding: 5rem 0;
+  padding: 0rem 0;
   &-wrapper {
     position: relative;
   }

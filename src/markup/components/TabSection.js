@@ -129,7 +129,7 @@ const TabSection = ({ data, subHeading, className }) => {
                       key={key}
                     >
                       <span>
-                        <i className="las la-question-circle"></i>
+                        <i className="las la-check-circle"></i>
                         <span className="text">{button.title}</span>
                       </span>
                     </button>

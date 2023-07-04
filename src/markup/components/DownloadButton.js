@@ -6,7 +6,7 @@ const DownloadButton = ({ groupType, buttonType, color }) => {
       <a href="#!" className={`download-button download-button-google ${buttonType}`}>
         <div className={`download-button-inner ${color}`}>
           <div className={`download-button-icon c-green ${color}`}>
-            <i className="fab fa-google-play"></i>
+            <i className="fas fa-user"></i>
           </div>
           <div className="download-button-content">
             <h5 className={`c-grey upper ls-1 ${color}`}>Join</h5>
@@ -17,7 +17,7 @@ const DownloadButton = ({ groupType, buttonType, color }) => {
       <a href="#!" className={`download-button download-button-apple ${buttonType}`}>
         <div className={`download-button-inner ${color}`}>
           <div className={`download-button-icon c-blue ${color}`}>
-            <i className="fab fa-apple"></i>
+            <i className="fas fa-download"></i>
           </div>
           <div className="download-button-content">
             <h5 className={`c-grey upper ls-1 ${color}`}>Download our</h5>
