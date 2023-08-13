@@ -53,7 +53,7 @@ const JoinUs = () => {
                   Make a difference that truly matters
                 </h4>
                 <h3 className="c-dark second-half-heading mb-2 text-center">VOLUNTEER WITH US</h3>
-                <div className="col-xxl-8 offset-xxl-2 col-lg-12 offset-lg-0 col-8 offset-2">
+                <div className="col-10 offset-1 col-xxl-8 offset-xxl-2 col-lg-12 offset-lg-0 col-8 ">
                   <p className="my-4">
                     Are you a passionate and driven young leader looking to make a real impact in
                     the community? Rotaract Young Professionals warmly welcomes you to step up and
@@ -96,9 +96,9 @@ const JoinUs = () => {
               </div>
             </div>
             <div className="row d-flex justify-content-center">
-              <div className="col-lg-9 col-md-8 col-10">
+              <div className="col-12 col-lg-9 col-md-8">
                 <div className="faq-wrapper">
-                  <div className="faq" id="committee-accordion">
+                  <div className="faq px-5 py-5" id="committee-accordion">
                     {committee.map((element, key) => {
                       return (
                         <div className="accordion-item" key={key}>
@@ -162,9 +162,9 @@ const JoinUs = () => {
               </div>
             </div>
             <div className="row d-flex justify-content-center">
-              <div className="col-lg-9 col-md-8 col-10">
+              <div className="col-12 col-lg-9 col-md-8">
                 <div className="faq-wrapper">
-                  <div className="faq" id="subcommittee-accordion">
+                  <div className="faq px-5 py-5" id="subcommittee-accordion">
                     {subcommittee.map((element, key) => {
                       return (
                         <div className="accordion-item" key={key}>

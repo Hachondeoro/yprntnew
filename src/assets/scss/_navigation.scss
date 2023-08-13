@@ -438,7 +438,7 @@ $xss: '(max-width: 375px)';
     .navigation-inner {
       padding: 3.1rem 0 3.1rem 0;
       @media (max-width: 991px) {
-        padding: 3.1rem 2rem 3.1rem 2rem;
+        padding: 1rem 2rem 1rem 2rem;
       }
     }
     .navigation-menu {
@@ -482,7 +482,7 @@ $xss: '(max-width: 375px)';
   &-1:not(.scrolled) {
     .navigation-logo {
       position: relative;
-      height: 3.3rem;
+      height: 6rem;
 
       a {
         position: absolute;
