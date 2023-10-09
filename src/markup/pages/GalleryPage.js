@@ -28,7 +28,7 @@ const GalleryPage = () => {
       {/* page header - end */}
         <ImageGallery images={nwAugImages} title="August Networking Event" />
         <ImageGallery images={nwJulImages} title="July Networking Event"/>
-        <ImageGallery images={psImages} title="Public Speaking Session with Dante LinkedIn"/>
+        <ImageGallery images={psImages} title="Public Speaking Session with Dante & LinkedIn Local"/>
       {/* tab section - start */}
       
     
