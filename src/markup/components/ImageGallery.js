@@ -20,7 +20,7 @@ export const ImageGallery = ({images, title}) => {
   const handleMoveNext = () => setIndex(nextIndex);
   return (
     <div className='gallery-wrapper'>
-        <h3 style={{"marginTop":"64px"}}>{title}</h3>
+        
         <Gallery
           images={images}
           onClick={handleClick}
