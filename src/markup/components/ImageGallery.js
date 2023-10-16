@@ -3,9 +3,13 @@ import React, { useState } from 'react';
 import { Gallery } from "react-grid-gallery";
 import Lightbox from 'react-image-lightbox';
 import "react-image-lightbox/style.css";
+import { Image } from "react-grid-gallery";
+import { json } from 'react-router-dom';
 
-export const ImageGallery = ({images, title}) => {
-    const [index, setIndex] = useState(-1);
+export const ImageGallery = (images) => {
+  const [index, setIndex] = useState(-1);
+  images=images.images;
+  console.log(Image)
     
 
   const currentImage = images[index];
@@ -25,7 +29,8 @@ export const ImageGallery = ({images, title}) => {
           images={images}
           onClick={handleClick}
           enableImageSelection={false}
-      
+          rowHeight={300}
+          lazyLoad={true}
         />
       {!!currentImage && (
           /* @ts-ignore */
