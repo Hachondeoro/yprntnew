@@ -239,6 +239,15 @@ const Header = ({ type }) => {
                 </li>
                 <li>
                   <Link
+                    to="/gallery"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
+                    <span>Gallery</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/joinus"
                     className="link-underline link-underline-1"
                     onClick={() => closeMenuMobile()}

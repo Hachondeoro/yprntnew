@@ -12,6 +12,7 @@ import Projects from './pages/Projects';
 import FeatureDetail2 from './pages/FeatureDetail2';
 import Features1 from './pages/Features1';
 import Features2 from './pages/Features2';
+import GalleryPage from './pages/GalleryPage';
 import Membership from './pages/Membership';
 import Sponsors from './pages/Sponsors';
 import Footer from './layout/Footer';
@@ -39,6 +40,7 @@ const AppRoutes = () => {
           <Route path="/features-2" element={<Features2 />} />
           {/*<Route path="/pricing" element={<Pricing />} />*/}
           <Route path="/membership" element={<Membership />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/joinus" element={<JoinUs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
