@@ -5,27 +5,16 @@ import DownloadButton from '../components/DownloadButton';
 import SectionHeading from '../components/SectionHeading';
 import AppFeatureSingle from '../components/AppFeatureSingle';
 import Button from '../components/Button';
-import TestimonialSlider from '../components/TestimonialSlider';
-import ContactForm1 from '../components/ContactForm1';
-import ContactForm2 from '../components/ContactForm2';
-import BlogSingle from '../components/BlogSingle';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 import VideoLightBox from '../components/VideoLightBox';
 
 // images
 import hero_phone from '../../assets/images/home-slider.png';
-// import video_img from '../../assets/images/video-img.jpg';
 import video_img from '../../assets/images/service before self.png';
 import background_image_1 from '../../assets/images/patterns/pattern-1.jpg';
-import feature_phone_1 from '../../assets/images/feature-section-1-phone.png';
-import feature_image_1 from '../../assets/images/feature-section-1-img.jpg';
-import feature_phone_2 from '../../assets/images/feature-section-2-phone.png';
-import feature_image_2 from '../../assets/images/feature-section-2-img.jpg';
 
 // data
-import blog from '../data/blog';
 import features from '../data/features';
-import faq from '../data/faq';
 
 const Index = () => {
   return (
@@ -170,7 +159,7 @@ const Index = () => {
       {/*      <PricingSlider />*/}
       {/*    </div>*/}
       {/*    <div className="background-pattern background-pattern-1">*/}
-      {/*      <BackgroundAnimation />*/}
+      {/*      <BackgroundAnimation />
       {/*      <div className="background-pattern-gradient"></div>*/}
       {/*      <div className="background-pattern-bottom">*/}
       {/*        <div*/}
@@ -188,7 +177,7 @@ const Index = () => {
 
       {/* screen section - start */}
       {/*<div className="screen-section">*/}
-      {/*  <div className="screen-section-wrapper">*/}
+      {/*  <div className="screen-section-wrapper">*/}``
       {/*    <ScreenSlider />*/}
       {/*    /!* screen section bottom - start *!/*/}
       {/*    <div className="screen-section-bottom">*/}
@@ -215,7 +204,7 @@ const Index = () => {
       {/*    /!* screen section bottom - end *!/*/}
       {/*  </div>*/}
       {/*  <div className="background-pattern background-pattern-2">*/}
-      {/*    <BackgroundAnimation />*/}
+      {/*    <BackgroundAnimation />
       {/*    <div className="background-pattern-gradient"></div>*/}
       {/*    <div className="background-pattern-bottom">*/}
       {/*      <div className="image" style={{ backgroundImage: `url(${background_image_2})` }}></div>*/}

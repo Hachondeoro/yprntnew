@@ -125,7 +125,7 @@ const JoinUs = () => {
                             </div>
                             <div className={`download-button-group`}>
                               <a
-                                href="https://forms.office.com/r/WHXyYZ2Zui"
+                                href="https://forms.office.com/r/Z3htZPiCRF"
                                 className={`download-button download-button-rotaractButton download-button-white`}
                                 data-interception="off"
                                 target="_blank"
@@ -191,7 +191,7 @@ const JoinUs = () => {
                             </div>
                             <div className={`download-button-group`}>
                               <a
-                                href="https://forms.office.com/r/WHXyYZ2Zui"
+                                href="https://forms.office.com/r/Z3htZPiCRF"
                                 className={`download-button download-button-rotaractButton download-button-white`}
                                 data-interception="off"
                                 target="_blank"

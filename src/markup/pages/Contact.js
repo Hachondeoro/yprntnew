@@ -75,8 +75,8 @@ const Contact = () => {
                     </div>
                     <h3 className="c-dark">Email Us</h3>
                     <p className="c-grey">
-                      <a href="mailto:media@orions.com" className="link-underline link-underline-1">
-                        <span>info@yprnt.com</span>
+                      <a href="mailto:info@rotaractnt.com" className="link-underline link-underline-1">
+                        <span>info@rotaractnt.com</span>
                       </a>
                     </p>
                     {/*<p className="c-grey">*/}

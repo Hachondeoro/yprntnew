@@ -81,8 +81,7 @@ const About = () => {
                   <p>
                     Driven by their passion for making a difference, the members of Rotaract created
                     a close-knit community of like-minded individuals. They united under a common
-                    goal: to create positive change in the community through their collective
-                    efforts. Together, they became a force for good, working tirelessly to make a
+                    goal: to create positive change in the community xworking tirelessly to make a
                     lasting impact.
                   </p>
                   <p>
@@ -164,7 +163,7 @@ const About = () => {
                 <AppFeatureSingle
                   icon="las la-bullseye"
                   heading="Our Mission"
-                  excerpt="At Rotaract, our mission is to empower Northern Territory's young professionals and recent graduates by creating a vibrant community where they can forge valuable connections, thrive in personal and professional growth, and emerge as inspiring leaders. We achieve this through a dynamic blend of fellowship and service, fostering an environment where young professionals lead with integrity, serve with passion, and make a lasting impact in their communities and beyond."
+                  excerpt="At Rotaract, our mission is to empower Northern Territory's young professionals and recent graduates by creating a vibrant community where they can forge valuable connections, thrive in personal and professional growth, and emerge as inspiring leaders."
                   link="/#"
                   containerClass="app-feature-single-1"
                 />
@@ -177,67 +176,67 @@ const About = () => {
       {/* about section - end */}
 
       {/* team section - start */}
-      <div className="team">
-        <div className="team-wrapper">
-          <div className="team-inner">
-            <div className="container">
-              {/* team section heading - start */}
-              <div className="row">
-                <div className="col">
-                  <div className="section-heading center c-white">
-                    <div className="sub-heading upper ls-1">
-                      <i className="las la-tags"></i>
-                      <h5>our team</h5>
-                    </div>
-                    <div className="main-heading">
-                      <h1>Our organisation structure</h1>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* team section heading - end */}
-            </div>
-            <div className="container team-slider-container">
-              {/* team slider - start */}
-              <div className="">
-                <div className="about-section-image">
-                  <div className="pattern-image pattern-image-1">
-                    <div className="pattern-image-wrapper">
-                      <img
-                        className="drop-shadow-1"
-                        src={organisation_image}
-                        height="850"
-                        width="1250"
-                        alt="pattern"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              {/* team slider - end */}
-            </div>
-            {/*<div className="container team-slider-container">*/}
-            {/*  /!* team slider - start *!/*/}
-            {/*  <div className="row">*/}
-            {/*    <div className="col">*/}
-            {/*      <TeamSlider />*/}
-            {/*    </div>*/}
-            {/*  </div>*/}
-            {/*  /!* team slider - end *!/*/}
-            {/*</div>*/}
-          </div>
-          <div className="background-pattern background-pattern-1">
-            <BackgroundAnimation />
-            <div className="background-pattern-gradient"></div>
-            <div className="background-pattern-bottom">
-              <div
-                className="image"
-                style={{ backgroundImage: `url(${background_image_1})` }}
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*<div className="team">*/}
+      {/*  <div className="team-wrapper">*/}
+      {/*    <div className="team-inner">*/}
+      {/*      <div className="container">*/}
+      {/*        /!* team section heading - start *!/*/}
+      {/*        <div className="row">*/}
+      {/*          <div className="col">*/}
+      {/*            <div className="section-heading center c-white">*/}
+      {/*              <div className="sub-heading upper ls-1">*/}
+      {/*                <i className="las la-tags"></i>*/}
+      {/*                <h5>our team</h5>*/}
+      {/*              </div>*/}
+      {/*              <div className="main-heading">*/}
+      {/*                <h1>Our organisation structure</h1>*/}
+      {/*              </div>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        /!* team section heading - end *!/*/}
+      {/*      </div>*/}
+      {/*      <div className="container team-slider-container">*/}
+      {/*        /!* team slider - start *!/*/}
+      {/*        <div className="">*/}
+      {/*          <div className="about-section-image">*/}
+      {/*            <div className="pattern-image pattern-image-1">*/}
+      {/*              <div className="pattern-image-wrapper">*/}
+      {/*                <img*/}
+      {/*                  className="drop-shadow-1"*/}
+      {/*                  src={organisation_image}*/}
+      {/*                  height="850"*/}
+      {/*                  width="1250"*/}
+      {/*                  alt="pattern"*/}
+      {/*                />*/}
+      {/*              </div>*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*        /!* team slider - end *!/*/}
+      {/*      </div>*/}
+      {/*      /!*<div className="container team-slider-container">*!/*/}
+      {/*      /!*  /!* team slider - start *!/*!/*/}
+      {/*      /!*  <div className="row">*!/*/}
+      {/*      /!*    <div className="col">*!/*/}
+      {/*      /!*      <TeamSlider />*!/*/}
+      {/*      /!*    </div>*!/*/}
+      {/*      /!*  </div>*!/*/}
+      {/*      /!*  /!* team slider - end *!/*!/*/}
+      {/*      /!*</div>*!/*/}
+      {/*    </div>*/}
+      {/*    <div className="background-pattern background-pattern-1">*/}
+      {/*      /!*<BackgroundAnimation />*!/*/}
+      {/*      <div className="background-pattern-gradient"></div>*/}
+      {/*      <div className="background-pattern-bottom">*/}
+      {/*        <div*/}
+      {/*          className="image"*/}
+      {/*          style={{ backgroundImage: `url(${background_image_1})` }}*/}
+      {/*        ></div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       {/* team section - end */}
 
       {/* testimonial section - start */}
@@ -265,58 +264,58 @@ const About = () => {
       {/* testimonial section - end */}
 
       {/* faq section - start */}
-      <div className="faq-section faq-section-1">
-        <div className="faq-section-wrapper">
-          <div className="container">
-            <div className="row">
-              <div className="col-xxl-10 offset-xxl-1 col-lg-12 offset-lg-0 col-10 offset-1">
-                <SectionHeading
-                  icon="las la-file-alt"
-                  heading="discover"
-                  subHeading="Some frequently asked questions"
-                  additionalClasses="center width-64"
-                />
-              </div>
-            </div>
-            <div className="row d-flex justify-content-center">
-              <div className="col-lg-9 col-md-8 col-10">
-                <div className="faq-wrapper">
-                  <div className="faq" id="faq-accordion">
-                    {FAQ.map((element, key) => {
-                      return (
-                        <div className="accordion-item" key={key}>
-                          <div className="accordion-header" id={`faq-${key}`}>
-                            <button
-                              className={`accordion-button ${key !== 1 ? 'collapsed' : ''}`}
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#faq-collapse-${key}`}
-                              aria-expanded={key === 1 ? 'true' : 'false'}
-                              aria-controls={`faq-collapse-${key}`}
-                            >
-                              <span>{element.question}</span>
-                            </button>
-                          </div>
-                          <div
-                            id={`faq-collapse-${key}`}
-                            className={`accordion-collapse collapse ${key === 1 ? 'show' : ''}`}
-                            aria-labelledby={`faq-${key}`}
-                            data-bs-parent="#faq-accordion"
-                          >
-                            <div className="accordion-body">
-                              <p>{parse(element.answer)}</p>
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/*<div className="faq-section faq-section-1">*/}
+      {/*  <div className="faq-section-wrapper">*/}
+      {/*    <div className="container">*/}
+      {/*      <div className="row">*/}
+      {/*        <div className="col-xxl-10 offset-xxl-1 col-lg-12 offset-lg-0 col-10 offset-1">*/}
+      {/*          <SectionHeading*/}
+      {/*            icon="las la-file-alt"*/}
+      {/*            heading="discover"*/}
+      {/*            subHeading="Some frequently asked questions"*/}
+      {/*            additionalClasses="center width-64"*/}
+      {/*          />*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*      <div className="row d-flex justify-content-center">*/}
+      {/*        <div className="col-lg-9 col-md-8 col-10">*/}
+      {/*          <div className="faq-wrapper">*/}
+      {/*            <div className="faq" id="faq-accordion">*/}
+      {/*              {FAQ.map((element, key) => {*/}
+      {/*                return (*/}
+      {/*                  <div className="accordion-item" key={key}>*/}
+      {/*                    <div className="accordion-header" id={`faq-${key}`}>*/}
+      {/*                      <button*/}
+      {/*                        className={`accordion-button ${key !== 1 ? 'collapsed' : ''}`}*/}
+      {/*                        type="button"*/}
+      {/*                        data-bs-toggle="collapse"*/}
+      {/*                        data-bs-target={`#faq-collapse-${key}`}*/}
+      {/*                        aria-expanded={key === 1 ? 'true' : 'false'}*/}
+      {/*                        aria-controls={`faq-collapse-${key}`}*/}
+      {/*                      >*/}
+      {/*                        <span>{element.question}</span>*/}
+      {/*                      </button>*/}
+      {/*                    </div>*/}
+      {/*                    <div*/}
+      {/*                      id={`faq-collapse-${key}`}*/}
+      {/*                      className={`accordion-collapse collapse ${key === 1 ? 'show' : ''}`}*/}
+      {/*                      aria-labelledby={`faq-${key}`}*/}
+      {/*                      data-bs-parent="#faq-accordion"*/}
+      {/*                    >*/}
+      {/*                      <div className="accordion-body">*/}
+      {/*                        <p>{parse(element.answer)}</p>*/}
+      {/*                      </div>*/}
+      {/*                    </div>*/}
+      {/*                  </div>*/}
+      {/*                );*/}
+      {/*              })}*/}
+      {/*            </div>*/}
+      {/*          </div>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       {/* faq section - end */}
     </>
   );

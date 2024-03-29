@@ -237,15 +237,15 @@ const Header = ({ type }) => {
                     <span>Membership</span>
                   </Link>
                 </li>
-                <li>
-                  <Link
-                    to="/joinus"
-                    className="link-underline link-underline-1"
-                    onClick={() => closeMenuMobile()}
-                  >
-                    <span>Join us</span>
-                  </Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link*/}
+                {/*    to="/joinus"*/}
+                {/*    className="link-underline link-underline-1"*/}
+                {/*    onClick={() => closeMenuMobile()}*/}
+                {/*  >*/}
+                {/*    <span>Join us</span>*/}
+                {/*  </Link>*/}
+                {/*</li>*/}
                 <li>
                   <Link
                     to="/contact"

@@ -46,8 +46,8 @@ const Footer = () => {
                     and to Elders both past and present.
                   </p>
                   <div className="links">
-                    <a className="link-underline" href="mailto:info@yprnt.com">
-                      <span>info@yprnt.com</span>
+                    <a className="link-underline" href="mailto:info@rotaractnt.com">
+                      <span>info@rotaractnt.com</span>
                     </a>
                   </div>
                 </div>
