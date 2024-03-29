@@ -9,7 +9,7 @@ const token = 'a08ac1b8fb0f6e67ceefab2e065759';
 
 const client = require('@datocms/cma-client-node').buildClient({ apiToken: token });
 
-const initializePage = async pageName => {
+const initializePage = async (pageName: string) => {
   const model_api_key = pageName.toLowerCase();
   await client.itemTypes.create({
     name: pageName,
@@ -86,3 +86,5 @@ const Pages = ['CyberSecurity', 'CloudService', 'Microsoft365Training', 'PitchTr
 // client.fields.list('service1').then(fields => {
 //   console.log(fields);
 // });
+
+export default Pages;

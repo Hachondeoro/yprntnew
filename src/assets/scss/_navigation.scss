@@ -23,13 +23,20 @@ $xss: '(max-width: 375px)';
 
   &-inner {
     width: 100%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
 
     @include animateIt;
+  }
+
+
+  .logo {
+    width: 120px;
+    @media #{$sm} {
+      width: 80px;
+    }
   }
 
   .social {
@@ -482,7 +489,7 @@ $xss: '(max-width: 375px)';
   &-1:not(.scrolled) {
     .navigation-logo {
       position: relative;
-      height: 6rem;
+      height: 4rem;
 
       a {
         position: absolute;
@@ -528,6 +535,7 @@ $xss: '(max-width: 375px)';
       .logo-white {
         opacity: 0;
         visibility: hidden;
+        display: none;
       }
     }
   }
