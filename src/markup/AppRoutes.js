@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Membership from './pages/Membership';
 import Sponsors from './pages/Sponsors';
+import Gallery from './pages/GalleryPage';
 import Footer from './layout/Footer';
 import CustomScrollbar from './components/CustomScrollbar';
 import Preloader from './components/Preloader';
@@ -31,6 +32,7 @@ const AppRoutes = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/*<Route path="/joinus" element={<JoinUs />} />*/}
           <Route path="/contact" element={<Contact />} />
         </Routes>
