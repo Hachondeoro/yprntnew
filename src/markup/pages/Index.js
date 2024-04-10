@@ -7,6 +7,7 @@ import AppFeatureSingle from '../components/AppFeatureSingle';
 import Button from '../components/Button';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 import VideoLightBox from '../components/VideoLightBox';
+import ImageSlider from '../components/ImageSlider';
 
 // images
 import hero_phone from '../../assets/images/home-slider.png';
@@ -37,9 +38,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="col-lg-6 offset-lg-0 order-lg-2 col-10 offset-1 order-1">
-                <div className="hero-image">
-                  <img className="drop-shadow" src={hero_phone} alt="hero-phone" />
-                </div>
+                <ImageSlider />
               </div>
             </div>
           </div>
