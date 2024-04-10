@@ -60,7 +60,8 @@ const ImageSlider = () => {
     <Swiper 
       loop={true}
       autoplay={{delay: 5000, disableOnInteraction: false}}
-      speed={1500}
+      speed={1000}
+      lazy={true}
       modules={[EffectFade]}
       effect='fade'
       style={{position:"relative",zIndex:"2"}} // how to make it loop infinately? add 
