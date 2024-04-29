@@ -29,7 +29,7 @@ const Projects = () => {
         `,
     ).then(data => {
       console.log(data);
-      setProjects(data.allProjects);
+      setProjects(data.allProjects.reverse());
       setIsLoaded(true);
     });
   }, []);
