@@ -27,7 +27,7 @@ const Index = () => {
             <div className="row">
               <div className="col-lg-6 offset-lg-0 order-lg-1 col-10 offset-1 order-2">
                 <div className="hero-content c-white">
-                  <h1>Rotaract Young Professionals</h1>
+                  <h1>Young Professionals Rotaract</h1>
                   <p className="large-subtitle">
                     Rotaract values the importance of connecting young professionals, fostering
                     their personal and professional growth, and inspiring them to give back to the
