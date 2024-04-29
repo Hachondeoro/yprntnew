@@ -161,15 +161,15 @@ const Header = ({ type }) => {
     <div className={`navigation ${type}`}>
       <div className="navigation-wrapper">
         <div className="container">
-          <div className="navigation-inner">
+          <div className="navigation-inner" style={{padding:'1rem'}}>
             <div className="navigation-logo">
               {type === 'navigation-1' ? (
                 <>
                   <Link className="logo" to="/">
-                    <img src={logo} alt="orions-logo" />
+                    <img src={logo} alt="orions-logo" style={{width:'64px'}}/>
                   </Link>
                   <Link className="logo-white" to="/">
-                    <img src={logo_white} alt="orions-logo" />
+                    <img src={logo_white} alt="orions-logo" style={{width:'64px'}}/>
                   </Link>
                 </>
               ) : (
@@ -244,6 +244,15 @@ const Header = ({ type }) => {
                     onClick={() => closeMenuMobile()}
                   >
                     <span>Gallery</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/joinus"
+                    className="link-underline link-underline-1"
+                    onClick={() => closeMenuMobile()}
+                  >
+                    <span>Join us</span>
                   </Link>
                 </li>
                 <li>
